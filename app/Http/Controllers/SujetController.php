@@ -32,6 +32,7 @@ class SujetController extends Controller
             $reaction = Reaction::where("sujet_id", $id)->where("user_id", Auth::user()->id)->get();
             
         }
+        $reaction = 0;
         if ($reaction) {
             //$reaction=$reaction;
             return response()->json([
@@ -39,7 +40,7 @@ class SujetController extends Controller
             ]);
         }else{
             return response()->json([
-                'sujet' => $sujet, 'reaction' => 0, 'reactionNumber' => $react, 'reponsesUsers' => $reponseUsers
+                'sujet' => $sujet, 'reaction' => $reaction, 'reactionNumber' => $react, 'reponsesUsers' => $reponseUsers
             ]);
         }
         

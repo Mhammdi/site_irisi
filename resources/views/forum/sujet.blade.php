@@ -214,7 +214,7 @@
                         this.ReponsesUsers = response.data.reponsesUsers;
                         this.react = response.data.reactionNumber;
                         if (response.data.reaction != 0) {
-                            this.reaction = response.data.reaction[0];
+                            this.reaction = response.data.reaction;
                         } 
                         
 

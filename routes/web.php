@@ -18,8 +18,11 @@ Route::get('/', function () {
 Route::resource('forum', 'TypeSujetController');
 Route::resource('sujet', 'SujetController');
 Route::resource('reponse', 'ReponseController');
+
+
 Route::resource('reaction', 'ReactionController');
 Route::get('teest', 'ReactionController@Store');
+
 
 
 

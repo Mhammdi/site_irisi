@@ -93,7 +93,6 @@
                             <textarea class="form-control" id="description" rows="3" v-model="sujet.description"></textarea>
                         </div>
                         <div class="form-group">
-
                             <button class="form-control btn btn-primary" type="submit">Add</button>
                         </div>
                     </form>
